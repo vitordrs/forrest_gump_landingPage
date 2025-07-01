@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+.hero{
+    background:url('./img/hero.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: variaveis.$corTexto;
+    padding: 0 20px;
+    
+    &__container{
+        width: 100%;
+        max-width: 900px;
+        padding: 0 20px;
+        p{
+            color: variaveis.$corTexto;
+        }
+        h1{
+            color: variaveis.$corSecundaria;
+        }
+        
+        
+        &__content{
+            margin-top: -13rem;
+            background-color: variaveis.$corFundoHero;
+            padding: 2rem;
+            border-radius: 1rem;
+            max-width: 600px;
+
+            &__btn{
+                background-color: variaveis.$corBotao;
+                color: variaveis.$corTexto;
+                padding: 0.75rem 1.5rem;
+                border-radius: 0.5rem;
+                text-decoration: none;
+                font-weight: bold;
+                transition: background 0.3s;
+        
+                &:hover{
+                    background-color: variaveis.$corBotaoHover;
+                }
+            }
+        }
+        
+    }   
+}
