@@ -1,0 +1,30 @@
+@use 'variaveis';
+.m-top{
+    margin-top: 5rem;
+}
+.secao__texto{
+    background-color: variaveis.$corFundo;
+    color: variaveis.$corTexto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    
+    &__container{
+        max-width: 1000px;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border: solid 2px variaveis.$corSecundaria;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.658);
+    }
+    @media (max-width: 40rem) {
+    .secao__texto {
+        padding: 1rem;
+
+            &__container {
+            padding: 1rem;
+            }
+        }   
+    }
+}
+

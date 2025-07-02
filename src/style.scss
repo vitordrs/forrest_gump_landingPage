@@ -1,7 +1,9 @@
 @use 'variaveis';
 @use 'hero';
-@use 'sinopse';
-
+@use 'secao__texto';
+@use 'tabs';
+@use 'elenco';
+@use 'galeria';
 
 html{
     height: 100%;
@@ -36,3 +38,24 @@ html{
 }
 
 
+.footer{
+    background-color: variaveis.$corSecundaria;
+    padding: 1.25rem 1rem;
+    text-align: center;
+
+    &__texto{
+        color: #FFF;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        margin: 0;
+    }
+    @media (max-width: 40rem) {
+    .footer {
+        padding: 1rem;
+
+            &__texto {
+            font-size: 0.75rem;
+            }
+        }
+    }
+}

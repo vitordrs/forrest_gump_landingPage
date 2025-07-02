@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
+    <script src="./src/main.js" defer></script>
     <title>Forrest Gump</title>
 </head>
 <body>
@@ -16,24 +17,125 @@
             </div>
         </div>
     </section>
-    <section class="sinopse">
-        <div class="sinopse__container">
-            <h2 class="title__mid">Sinopse</h2>
-            <p class="text__mid">Um homem simples com um coração puro atravessa décadas da história americana,
-            influenciando acontecimentos importantes sem nem perceber.</p>
+    <section class="tabs secao__texto">
+        <div class="tabs__menu ">
+            <button type="button" class="active tabs__btn text__big " data-tab="sinopse" >Sinopse</button>
+            <button type="button" class="tabs__btn text__big" data-tab="resumo" >Resumo</button>
+            <button type="button" class="tabs__btn text__big" data-tab="sobre" >Sobre o filme</button>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__painel active m-top secao__texto__container" id="sinopse">
+                <h2 class="title__mid">Sinopse</h2>
+                <p class="text__mid">Forrest Gump é um homem simples, mas com um coração puro e uma visão única do mundo. Ao longo de várias décadas da história americana, ele se envolve — muitas vezes sem saber — em grandes eventos, deixando uma marca por onde passa. Em meio a encontros com presidentes, guerras e revoluções culturais, Forrest segue seu caminho movido pelo amor, amizade e pelos conselhos de sua mãe, provando que não é preciso entender tudo da vida para vivê-la de forma grandiosa.</p>
+            </div>
+            <div class="tabs__painel m-top secao__texto__container" id="resumo">
+                <h2 class="title__mid">Resumo do filme</h2>
+                <p class="text__mid">
+                    Forrest Gump é um homem simples, com um coração puro, que acaba vivendo uma vida extraordinária. Desde criança, enfrentou desafios — usava aparelhos ortopédicos nas pernas, sofria bullying e foi diagnosticado com um QI de 75, apenas cinco pontos abaixo do mínimo exigido para entrar na escola pública. Sua mãe, determinada a garantir ao filho uma vida digna, não aceitou essa rejeição passivamente. Em uma das primeiras cenas marcantes do filme, ela faz tudo o que for necessário para que ele tenha acesso à educação.
+                </p>
+                <p class="text__mid">
+                    Ainda na infância, Forrest descobre seu talento natural para correr ao fugir de agressores. Nesse momento, os suportes de suas pernas se quebram e ele passa a correr livremente — um símbolo recorrente em sua vida. A habilidade o leva a ganhar uma bolsa universitária como jogador de futebol americano.
+                </p>
+                <p class="text__mid">
+                    Após a faculdade, Forrest se alista no exército e vai para a Guerra do Vietnã, onde conhece Bubba, seu melhor amigo, com quem faz uma promessa: montar uma frota de pesca de camarões ao final da guerra. Durante uma emboscada, Forrest salva vários membros do seu pelotão, inclusive o Tenente Dan Taylor, que perde as pernas e entra em profunda revolta por ter sobrevivido — acreditava que morrer em combate era seu destino, como seus antepassados.
+                </p>
+                <p class="text__mid">
+                    Mesmo relutante, Dan permanece na vida de Forrest após a guerra. Eles acabam construindo uma amizade sincera, marcada por momentos fortes, como quando Dan defende Forrest de garotas que o humilham ou quando enfrentam juntos uma grande tempestade no mar. Esse evento destrói os barcos concorrentes e transforma o negócio dos camarões, inicialmente fracassado, em um império. Dan se torna sócio e, pela primeira vez, encontra paz consigo mesmo.
+                </p>
+                <p class="text__mid">
+                    Forrest também se torna milionário com a "Bubba Gump Shrimp Company" e doa grande parte de sua fortuna. Mesmo assim, continua levando uma vida simples, movida por sentimentos profundos e laços afetivos. Um desses laços é com sua mãe, que sempre o ensinou com frases que se tornaram icônicas. Em sua última conversa com ela, Forrest escuta dela uma das lições mais profundas: “A vida é como uma caixa de chocolates. Você nunca sabe o que vai encontrar.” Essa despedida é um ponto alto emocional do filme.
+                </p>
+                <p class="text__mid">
+                    Após a morte da mãe, Forrest entra em um momento de desorientação e tristeza. Sem rumo, ele simplesmente começa a correr — e corre pelos Estados Unidos por <b>três anos, dois meses, 14 dias e 16 horas.</b> Sem saber, torna-se inspiração para milhares de pessoas que o seguem e veem nele uma figura de propósito, força e superação. A corrida se transforma em um dos momentos mais simbólicos do filme, representando sua forma de lidar com a dor, a perda e as incertezas da vida.
+                </p>
+                <p class="text__mid">
+                    Ao longo da trama, o amor entre Forrest e Jenny se revela intenso e doloroso. Jenny teve uma infância marcada por abusos e traumas que a afastaram de Forrest diversas vezes. Apesar disso, ele nunca deixou de amá-la. Após anos separados, eles se casam, mas Jenny está doente e morre pouco tempo depois. Antes disso, ela revela a Forrest que ele é pai de um menino, Forrest Jr.
+                </p>
+                <p class="text__mid">
+                    O filme termina com Forrest acompanhando o filho em seu primeiro dia de aula, iniciando um novo ciclo de amor, cuidado e esperança.
+                </p>
+                <p class="text__mid">
+                    <i>Forrest Gump</i> é, acima de tudo, um retrato de como a bondade, a persistência e o amor verdadeiro podem mudar o mundo ao nosso redor — mesmo quando não somos os mais rápidos, os mais inteligentes ou os mais compreendidos.
+                </p>
+            </div>
+            <div class="tabs__painel secao__texto__container m-top" id="sobre">
+                <h2 class="title__mid">Sobre o filme</h2>
+                <p class="text__mid">
+                    Forrest Gump: O Contador de Histórias (Forrest Gump) é um filme de comédia dramática estadunidense de 1994 dirigido por Robert Zemeckis. Uma adaptação do romance de 1986 de Winston Groom, o roteiro do filme é escrito por Eric Roth
+                </p>
+                <p class="text__mid">
+                    O filme foi um grande sucesso de bilheteria: tornou-se o filme de maior bilheteria nos Estados Unidos lançado naquele ano e arrecadou mais de US$ 678,2 milhões em todo o mundo durante sua exibição nos cinemas, tornando-se o segundo filme de maior bilheteria de 1994, atrás de O Rei Leão. A trilha sonora vendeu mais de 12 milhões de cópias. Forrest Gump ganhou seis Oscars: Melhor Filme, Melhor Diretor, Melhor Ator para Hanks, Melhor Roteiro Adaptado, Melhores Efeitos Visuais e Melhor Edição de Filme. Recebeu muitas indicações a prêmios, incluindo Globos de Ouro, British Academy Film Awards e Screen Actors Guild Awards.
+                </p>
+            </div>
         </div>
     </section>
-    <section class="resumo">
-        <div class="resumo__container">
-            <h2 class="title__mid">Resumo do filme</h2>
-            <p class="text__mid">
-                Forrest Gump, é um homem com QI abaixo da média, mas
-                com uma bondade e uma perseverança raras. Desde sua infância no Alabama, ele se envolve
-                em momentos marcantes da história dos EUA, como a Guerra do Vietnã e a luta pelos direitos
-                civis. Sempre motivado por sua paixão por Jenny, Forrest mostra como a vida pode surpreender
-                mesmo os mais inocentes
-            </p>
+    <section class="elenco">
+        <h2 class="title__big">Elenco principal</h2>
+        <div class="elenco__item">
+            <img src="./dist/img/forrest.jpg" alt="forest gump">
+            <div class="elenco__info">
+                <div class="elenco__info__nomes">
+                    <h3 class="title__small personagem">Forrest Gump.</h3>
+                    <h3 class="title__small ator"> Tom Hanks</h3>
+                </div>
+                <p class="descricao">Um homem simples com um coração puro, cuja jornada extraordinária impacta a historia americana</p>
+            </div>
+        </div>
+        <div class="elenco__item">
+            <img src="./dist/img/bubba.jpg" alt="Bubba">
+            <div class="elenco__info">
+                <div class="elenco__info__nomes">
+                    <h3 class="title__small personagem">Benjamin "Bubba" Blue.</h3>
+                    <h3 class="title__small ator"> Mykelti Williamson</h3>
+                </div>
+                <p class="descricao">Melhor amigo de Forrest, apaixonado pelo mar e pelo negócio de camarões.</p>
+            </div>
+        </div>
+        <div class="elenco__item">
+            <img src="./dist/img/jenny.jpg" alt="Jenny">
+            <div class="elenco__info">
+                <div class="elenco__info__nomes">
+                    <h3 class="title__small personagem">Jenny Curran.</h3>
+                    <h3 class="title__small ator">Robin Wright</h3>
+                </div>
+                <p class="descricao">Amiga de infância e grande amor de Forrest, vivendo uma vida cheia de altos e baixos.</p>
+            </div>
+        </div>
+        <div class="elenco__item">
+            <img src="./dist/img/tenente-dan.jpg" alt="Dan">
+            <div class="elenco__info">
+                <div class="elenco__info__nomes">
+                    <h3 class="title__small personagem">Dan Taylor.</h3>
+                    <h3 class="title__small ator">Gary Sinise</h3>
+                </div>
+                <p class="descricao">Oficial militar que luta contra seus próprios demônios após a guerra.</p>
+            </div>
+        </div>
+        <div class="elenco__item">
+            <img src="./dist/img/sra-gump.jpg" alt="Sra.Gump">
+            <div class="elenco__info">
+                <div class="elenco__info__nomes">
+                    <h3 class="title__small personagem">Sra. Gump.</h3>
+                    <h3 class="title__small ator">Sally Field</h3>
+                </div>
+                <p class="descricao">Mãe amorosa de Forrest, que lhe ensina lições de vida valiosas.</p>
+            </div>
         </div>
     </section>
+    <section class="galeria">
+        <h2 class="title__mid">Momentos do filme</h2>
+        <div class="galeria__grid">
+            <img src="./dist/img/forrest-jenny-criança.jpg" alt="jenny e forrest criança">
+            <img src="./dist/img/run-forrest.jpg" alt="forrest correndo">
+            <img src="./dist/img/familia-bubba.jpg" alt="forrest e familia bubba">
+            <img src="./dist/img/forrest-jenny.jpg" alt="forrest e jenny adultos">
+            <img src="./dist/img/forrest-mae.jpg" alt="forrest e a mae">
+            <img src="./dist/img/forrest-barbudo.jpg" alt="forrest barbudo">
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__texto">Projeto fictício desenvolvido para fins educacionais — EBAC FullStack Python</p>
+        <p class="footer__texto">&copy; Desenvolvido por <strong>Vitor dos Reis Soares</strong></p>
+    </footer>
 </body>
 </html>

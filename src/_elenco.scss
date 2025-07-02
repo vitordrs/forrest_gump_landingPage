@@ -1,0 +1,75 @@
+@use 'variaveis';
+
+.elenco{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1.25rem 1rem;
+
+    h2{
+        text-align: center;
+    }
+
+    &__item{
+        display: flex;
+        align-items: flex-start;
+        gap: 1.25rem;
+        margin-bottom: 1.8rem;
+        border: variaveis.$corPrimaria solid 3px;
+        border-radius: 8px;
+
+        img{
+            width: 18rem;
+            height: auto;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    }
+
+    &__info{
+        flex: 1;
+
+        &__nomes{
+            display: flex;
+            gap: 0.5rem;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            .personagem{
+                color: variaveis.$corPrimaria;
+                border-right: variaveis.$corPrimaria solid 3px;
+            }
+
+            .ator{
+                color: variaveis.$corSecundaria;
+                font-style: italic;
+            }
+        }
+
+        .descricao{
+            color: variaveis.$corBotaoHover;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+    @media (max-width: 40rem) { // 640px
+    &__item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+        img {
+            width: 8rem; // 128px
+            margin-bottom: 0.75rem; // 12px
+        }
+    
+        &__info {
+            &__nomes {
+            justify-content: center;
+            flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+

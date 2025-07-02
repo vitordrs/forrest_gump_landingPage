@@ -47,4 +47,28 @@
         }
         
     }   
+    @media (max-width: 40rem) {
+    .hero {
+        height: auto;
+        padding: 2rem 1rem;
+
+        &__container__content {
+        margin-top: 0;
+        padding: 1.5rem;
+    }
+
+        .title__big {
+        font-size: 2rem;
+        }
+
+        .text__big {
+        font-size: 1rem;
+        }
+
+            &__container__content__btn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            }
+        }
+    }
 }
