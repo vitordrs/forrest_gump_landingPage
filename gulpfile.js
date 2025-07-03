@@ -36,9 +36,13 @@ function watch() {
     gulp.watch(paths.js.src, compressJS);
 }
 
+exports.compilarSass = compilarSass;
+exports.compressJS = compressJS;
 
 exports.default = gulp.series(
     compilarSass,
     compressJS,
     watch
 );
+
+exports.build = gulp.series(compilarSass, compressJS);
