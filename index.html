@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style.css">
-    <script src="./src/main.js" defer></script>
+    <script src="./dist/main.js" defer></script>
     <title>Forrest Gump</title>
 </head>
 <body>
+    <header class="navbar">
+        <nav class="navbar__container">
+            <ul class="navbar__menu">
+                <li><a class="navbar__link text__mid" href="#sobre__filme">Sobre o filme</a></li>
+                <li><a class="navbar__link text__mid" href="#elenco">Elenco</a></li>
+                <li><a class="navbar__link text__mid" href="#galeria">Galeria de fotos</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="hero">
         <div class="hero__container">
             <div class="hero__container__content">
@@ -17,7 +26,7 @@
             </div>
         </div>
     </section>
-    <section class="tabs secao__texto">
+    <section class="tabs secao__texto" id="sobre__filme">
         <div class="tabs__menu ">
             <button type="button" class="active tabs__btn text__big " data-tab="sinopse" >Sinopse</button>
             <button type="button" class="tabs__btn text__big" data-tab="resumo" >Resumo</button>
@@ -69,7 +78,7 @@
             </div>
         </div>
     </section>
-    <section class="elenco">
+    <section class="elenco" id="elenco">
         <h2 class="title__big">Elenco principal</h2>
         <div class="elenco__item">
             <img src="./dist/img/forrest.jpg" alt="forest gump">
@@ -122,20 +131,39 @@
             </div>
         </div>
     </section>
-    <section class="galeria">
+    <section class="galeria" id="galeria">
         <h2 class="title__mid">Momentos do filme</h2>
         <div class="galeria__grid">
-            <img src="./dist/img/forrest-jenny-criança.jpg" alt="jenny e forrest criança">
-            <img src="./dist/img/run-forrest.jpg" alt="forrest correndo">
-            <img src="./dist/img/familia-bubba.jpg" alt="forrest e familia bubba">
-            <img src="./dist/img/forrest-jenny.jpg" alt="forrest e jenny adultos">
-            <img src="./dist/img/forrest-mae.jpg" alt="forrest e a mae">
-            <img src="./dist/img/forrest-barbudo.jpg" alt="forrest barbudo">
+            <div class="galeria__item">
+                <img src="./dist/img/forrest-jenny-criança.jpg" id="primeiro__item" alt="jenny e forrest criança">
+                <p class="descricao text__mid">Forrest acompanhando Jenny ate em casa na infancia</p>
+            </div>
+            <div class="galeria__item">
+                <img src="./dist/img/run-forrest.jpg" alt="forrest correndo">
+                <p class="descricao text__mid">Cena em que Forrest corre e quebra os apoios</p>
+            </div>
+            <div class="galeria__item">
+                <img src="./dist/img/familia-bubba.jpg" alt="forrest e familia bubba">
+                <p class="descricao text__mid">Forrest conheçendo a  familia de bubba</p>
+            </div>
+            <div class="galeria__item">
+                <img src="./dist/img/forrest-jenny.jpg" alt="forrest e jenny adultos">
+                <p class="descricao text__mid">Forrest e Jenny adultos em frente a antiga casa de Jenny</p>
+            </div>
+            <div class="galeria__item">
+                <img src="./dist/img/forrest-mae.jpg" alt="forrest e a mae">
+                <p class="descricao text__mid">Ultima conversa de forrest e sua mae</p>
+            </div>
+            <div class="galeria__item">
+                <img src="./dist/img/forrest-barbudo.jpg" alt="forrest barbudo">
+                <p class="descricao text__mid">Correst apos correr por anos no país</p>
+            </div>
         </div>
     </section>
     <footer class="footer">
         <p class="footer__texto">Projeto fictício desenvolvido para fins educacionais — EBAC FullStack Python</p>
         <p class="footer__texto">&copy; Desenvolvido por <strong>Vitor dos Reis Soares</strong></p>
     </footer>
+    <button id="btn__topo" title="Voltar ao topo">↑</button>
 </body>
 </html>

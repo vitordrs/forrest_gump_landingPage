@@ -1,15 +1,25 @@
 @use 'variaveis';
+@use 'navbar';
 @use 'hero';
 @use 'secao__texto';
 @use 'tabs';
 @use 'elenco';
 @use 'galeria';
+@use "sass:color";
+
 
 html{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: variaveis.$corFundo;
     color: variaveis.$corTexto;
+    scroll-behavior: smooth;
+}
+
+#sobre__filme,
+#elenco,
+#galeria{
+    scroll-margin-top: 4rem;
 }
 
 .text__small{
@@ -57,5 +67,27 @@ html{
             font-size: 0.75rem;
             }
         }
+    }
+}
+
+#btn__topo{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: variaveis.$corSecundaria;
+    color: variaveis.$corFundo;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.5rem variaveis.$corboxShadow;
+    display: none;
+    z-index: 1000;
+    transition: background 0.3s, transform 0.3s;
+
+    &:hover{
+        background-color: color.adjust(variaveis.$corSecundaria, $lightness: -10%);
+        transform: scale(1.1);
     }
 }

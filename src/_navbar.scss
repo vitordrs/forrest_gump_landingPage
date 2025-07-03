@@ -1,0 +1,50 @@
+@use 'variaveis';
+
+.navbar{
+    background-color: variaveis.$corPrimaria;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    &__container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__menu{
+        display: flex;
+        justify-content:center;
+        gap: 12rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__link{
+        color: variaveis.$corFundo;
+        text-decoration: none;
+        position: relative;
+        transition: color 0.3s;
+
+        &:hover{
+            color: variaveis.$corBotao;
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            height: 2px;
+            background-color:variaveis.$corBotao ;
+            width: 0;
+            transition: width 0.3s ease-in-out;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        &:hover::after{
+            width: 100%;
+        }
+    }
+}
